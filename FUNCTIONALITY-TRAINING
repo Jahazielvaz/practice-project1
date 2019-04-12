@@ -1,1 +1,21 @@
 DESCRIPTION: The purpose of this file is to store the list of all the concepts that we're going to be going over. Furthermore it's to have a list of specific, practical uses for each of the concepts
+
+CONCEPTS/ Understanding Levels
+LVL1-RegExp() Constructor
+LVL1-Regex methods, and patterns
+LVL2-Fetch with public apis
+LVL2-Ajax calls
+LVL1-forEach()
+LVL1-Array methods(shift(), pop(), map(), filter(), etc)
+LVL2-INVERSE-This keyword
+LVL1-Binding on es6
+LVL0-.join()
+LVL2-INVERSE-The difference between forEach() and map()
+LVL1-.replace()
+LVL1-.toggle()
+LVL2-beziers CSS
+LVL2-transform property
+LVL2-flexbox
+LVL2-:first-child / :last-child CSS Targeting
+LVL2-.name-of-class > * CSS Targeting
+LVL3-.addEventListener (top events including transitionend)
