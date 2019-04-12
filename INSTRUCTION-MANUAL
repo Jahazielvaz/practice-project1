@@ -1,0 +1,21 @@
+INSTRUCTIONS
+
+Things To Know:
+-There are 4 levels of understanding:
+  *LVL1: You don't understand how it works, and you can't execute the syntax on your own
+  *LVL2: You understand how it works when you analyze it, but you can't execute the syntax on your own or without looking it up
+  *LVL2-INVERSE: You have internalized the syntax and even specific situations when to use it, but you don't really get how it works (This can be particularly bad, because you won't be able to use it in other situations that arise.)
+  *LVL3: You have internalized the syntax and know how it generally works, but you get confused when combining it with other code, and you also don't know to use it when situations arise, where that piece of code would solve them. Or in other words, you still can't solve tough situations with it, because you simply forget to use it then.
+  *LVL4: The concept and syntax are so internalized, that when situations arise where that solution can work, it comes to mind, and you just execute
+
+Checklist(Follow this list step by step, and that's how you'll complete this project):
+EXTRA CREDIT: Go through the ajax location directory app, and break down exactly what's happening and practice using some of those combinations.
+1- Go through the list of concepts and rate each of them using the 4 levels of understanding
+2- Use the console, as well as documentation to practice each of them until you get them all to LVL3. Once you get to that point, you have successfully completed this step (NOTE: You can decide to put some concepts to the back-burner for the future if you deem that would be more practical)
+3- Take all level 3 concepts and add the to the FUNCTIONALITY-TRAINING file. Make a list of very specific, practical ways you can use that specific concept. Do that for each of the concepts. If able to, practice some of those specific ways. Furthermore practice combining each of the concepts with each other, or with other advanced concepts, such as using the map feature
+4- Brainstorm one or 2 projects that would require to use all or most of the concepts.
+    REQUIREMENTS FOR THE PROJECT/S
+      -It should not be available in a tutorial (It should be your idea and creation although you are welcome to use others for inspiration)
+      -It should require you to gather information from different sources, and not have a fallback that has all the answers.
+      -It should preferably be something that's actually useful and practical, and not just a series of random, unconnected exercises.
+5- Congratulate yourself and reward yourself somehow for being such a BEAST!
