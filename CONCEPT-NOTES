@@ -1,0 +1,23 @@
+CONCEPT NOTES
+
+TRANSITION:
+-You use transition on the element/s that's going to change in the future
+-From what I can tell, you can also specify which specific attributes you want it to transition on, so for for example, you can tell it to only transition on the width or height. I still don't know how it works if you don't specify anything at all.
+  I just tested the above concept, and it's very powerful because you can basically have each attribute transition at different times.
+  NOTE: In order to have different attributes transition at different times, you need to separate them with a comma.
+    EXAMPLE:
+      .my-class{
+        transition: width 2s, height 5s;
+      }
+
+Transition Timing Function: You remember this one right? This one determines the actual effects of the transition as far as slowing down or speeding up. Here are the different options
+  -ease: slow start, fast end (default)
+  -linear: same consistent speed
+  -ease-in: slow start
+  -ease-out: slow end
+  -ease-in-out: slow start and end
+  -cubic bezier: define your own values in a cubic bezier. I don't understand how the values work, or how to manipulate them. I need to study this particular topic a lot more 
+
+
+
+--------------------------------------------

@@ -15,6 +15,7 @@ LVL1-.replace()
 LVL1-.toggle()
 LVL2-beziers CSS
 LVL2-transform property
+LVL1-transition property
 LVL2-flexbox
 LVL2-:first-child / :last-child CSS Targeting
 LVL2-.name-of-class > * CSS Targeting

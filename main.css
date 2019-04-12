@@ -4,3 +4,34 @@
   margin: 0;
   list-style: none;
 }
+
+.blocks{
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+}
+
+#block1{
+  background: blue;
+}
+
+#block2{
+  background: green;
+}
+
+#block3{
+  background: yellow;
+}
+
+#block4{
+  background: brown;
+  transition: height 2s, width 5s;
+}
+
+#block4:hover{
+  background: red;
+  height: 40px;
+  width: 50px;
+}
