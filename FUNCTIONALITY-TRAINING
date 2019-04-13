@@ -13,10 +13,12 @@ LVL0-.join()
 LVL2-INVERSE-The difference between forEach() and map()
 LVL1-.replace()
 LVL1-.toggle()
-LVL2-beziers CSS
 LVL2-transform property
-LVL1-transition property
+LVL2-transition property
 LVL2-flexbox
 LVL2-:first-child / :last-child CSS Targeting
 LVL2-.name-of-class > * CSS Targeting
 LVL3-.addEventListener (top events including transitionend)
+
+BACK-BURNER
+LVL2-bezier curves, and cubic bezier

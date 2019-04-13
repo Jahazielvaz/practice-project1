@@ -9,15 +9,25 @@ TRANSITION:
       .my-class{
         transition: width 2s, height 5s;
       }
+-I'm not sure about this, but it seems that transition doesn't work on the position attribute. I don'
+t know why, or if there's another way to make it work, but so far, it's not working
 
-Transition Timing Function: You remember this one right? This one determines the actual effects of the transition as far as slowing down or speeding up. Here are the different options
+Transition Timing Function: You remember this one right? This one determines the actual effects of the transition as far as slowing down or speeding up. Here are the different options.
+  Just like the transition, this attribute applies to the selector where the change is going to take place, before it takes place.
   -ease: slow start, fast end (default)
   -linear: same consistent speed
   -ease-in: slow start
   -ease-out: slow end
   -ease-in-out: slow start and end
-  -cubic bezier: define your own values in a cubic bezier. I don't understand how the values work, or how to manipulate them. I need to study this particular topic a lot more 
+  -cubic bezier: define your own values in a cubic bezier. I don't understand how the values work, or how to manipulate them. I need to study this particular topic a lot more
 
+-I've learned about a few things when it comes to cubic beziers. This info is still fairly speculative.
+  -So first, it always has to end in 1, which means if you wanted to create the bouncy effect, you'd need to make the last number higher than 1, and so what this is going to do, is go past it, and come back to the one.
+  -Another thing that I believe I learned is that, when you unhover, it eventually has to come back to normal, so it has to follow the same process, in reverse. I'm still fuzzy on all the details but I think this is kinda how it works.
+  -Ok, this is weird and I still don't fully understand it. Basically if the values go in order from smaller to greater, it just goes linearly, even if you have negative values which is weird because they're supposed to go past their starting and ending point which is 0 and 1,
+    however, if you want it to create the bouncy effect, then you have to get the first value to greater than the second one, and then the last value is going to work like that. Otherwise, none of them are gonna work.
+
+OVERVIEW: I learned the syntax, and overall how to use it, but it's still unpredictable to me, and I guess I still don't understand the concept of bezier curves, I definitely need to come back to bezier curves, but I decided to put it on the back burner, because my time can be used more efficiently elsewhere. 
 
 
 --------------------------------------------

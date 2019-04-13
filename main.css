@@ -9,8 +9,9 @@
   display: inline-block;
   margin: 20px;
   border: 1px solid black;
-  width: 30px;
+  width: 200px;
   height: 30px;
+  overflow: hidden;
 }
 
 #block1{
@@ -23,6 +24,12 @@
 
 #block3{
   background: yellow;
+  transition: 2s;
+  transition-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+#block3:hover{
+  width: 400px;
 }
 
 #block4{
@@ -33,5 +40,5 @@
 #block4:hover{
   background: red;
   height: 40px;
-  width: 50px;
+  width: 250px;
 }
