@@ -32,18 +32,60 @@ OVERVIEW: I learned the syntax, and overall how to use it, but it's still unpred
 
 --------------------------------------------
 
-ES5 BINDING THIS KEYWORD
+                      ES5 BINDING THIS KEYWORD
 
 THE PURPOSE OF BINDING: Ok so what I'm noticing is that you use binding sort of as a portal to reference things that you normally wouldn't be able to reference, for example if you want to reference an attribute inside of an object, from within that same object. So far I'm studying implicit binding. It's also a way to make sure js doesn't get confused when referencing things if there are properties that are alike, etc.
 
-Implicit Binding Deep-dive
+IMPLICIT BINDING DEEP-DIVE
 -First of all, where you use the this is where you reference it, but it doesn't know what this is going to be yet, until you tell it. You're basically saying, whatever piece of data that's going to show up that contains said property name (the name after the this keyword like: this.name), apply to that property inside that piece of data.
 -Now the way that js knows that "this" is going to be, is when you invoke it, what ever is to the left of the dot. At that point, js simply replaces the "this" keyword, with the name of the data that got invoked
 
+-I just discovered something really cool about functions!: When you create a function with a parameter, and then you invoke(call) that function, but instead of filling in the string value to take the place of the parameter, you put in an existing object, or data. Instead of simply executing that function, it'll actually pass in that piece of data. This is amazing, because then you can dynamically manipulate that data from within the function. For example, you can pass in a new property to what ever object is put into the function and of course you can invoke this function with multiple different objects
+  FULL EXAMPLE:
+    function nameCreator(newName){
+      newName.nameCaller = function(){
+        return `My name is ${this.name}`
+      }
+    }
+
+    NOTE: The function above passes in a parameter which is going to be an object. Once we invoke this function with a pre-made object, it's going to pass in that object, and execute whatever is inside it. In this case, it's going to create a new attribute called nameCaller to that object.
+      CODE:
+        let myName = {
+          name: "Jazzy"
+        }
+
+        nameCreator(myName)
+
+    NOTE: In this example right above, by invoking it, we told it to pass in the object called myName and furthermore, to create an attribute inside of myName called nameCaller. So now when we call myName.nameCaller(), it's going to execute the anonymous function inside of nameCaller. Here it is again
+      CODE
+        myName.nameCaller();
+
+    NOTE: The code above will execute the anonymous function, which is going to return that message, but here comes the key. Because myName is what's to the left of the dot when the function containing this.name got invoked. "this" is going to be replaced with myName. And so the "this" keyword, will look for the property called name, and return it's value which in this case is "Jazzy"
+      FINAL RESULTS:
+        "My name is Jazzy"
+
+Final Example:
+  function people(name, last){
+    return {
+      name: name,
+      last: last,
+      sayName: function(){
+        return `Yo, I'm ${this.name}`
+      }
+    }
+  }
+
+  let jazzy = people("Jazzy", "Vazquez");
+
+  NOTE: So in this example above, we stored the function call inside jazzy, so now the object is inside of the variable called jazzy, which means that when we call jazzy.sayName() it's going to invoke the anonymous function which once again is going to fire the "this" keyword, which is being invoked by the variable jazzy, or in other words by the function, and this is going to be replaced with the attribute called name, which lives inside of our function called people.
 
 ////////////////////////////////////////////////////////
 MISC NOTES
--Function inside an object literal: When you put a function inside an object literal, you either have to define it within the object literal, or otherwise if you want to reference an external function, you need to make sure you do not include the parenthesis, otherwise it's going to call it immediately, and you won't be able to refer to it at a later time. 
+-Function inside an object literal: When you put a function inside an object literal, you either have to define it within the object literal, or otherwise if you want to reference an external function, you need to make sure you do not include the parenthesis, otherwise it's going to call it immediately, and you won't be able to refer to it at a later time.
+
+
+
+
 
 
 
