@@ -7,7 +7,7 @@ LVL2-Fetch with public apis
 LVL2-Ajax calls
 LVL1-forEach()
 LVL1-Array methods(shift(), pop(), map(), filter(), etc)
-LVL2-INVERSE-This keyword
+LVL2-INVERSE-This keyword (Binding in es5)
 LVL1-Binding on es6
 LVL0-.join()
 LVL2-INVERSE-The difference between forEach() and map()

@@ -27,7 +27,30 @@ Transition Timing Function: You remember this one right? This one determines the
   -Ok, this is weird and I still don't fully understand it. Basically if the values go in order from smaller to greater, it just goes linearly, even if you have negative values which is weird because they're supposed to go past their starting and ending point which is 0 and 1,
     however, if you want it to create the bouncy effect, then you have to get the first value to greater than the second one, and then the last value is going to work like that. Otherwise, none of them are gonna work.
 
-OVERVIEW: I learned the syntax, and overall how to use it, but it's still unpredictable to me, and I guess I still don't understand the concept of bezier curves, I definitely need to come back to bezier curves, but I decided to put it on the back burner, because my time can be used more efficiently elsewhere. 
+OVERVIEW: I learned the syntax, and overall how to use it, but it's still unpredictable to me, and I guess I still don't understand the concept of bezier curves, I definitely need to come back to bezier curves, but I decided to put it on the back burner, because my time can be used more efficiently elsewhere.
 
 
 --------------------------------------------
+
+ES5 BINDING THIS KEYWORD
+
+THE PURPOSE OF BINDING: Ok so what I'm noticing is that you use binding sort of as a portal to reference things that you normally wouldn't be able to reference, for example if you want to reference an attribute inside of an object, from within that same object. So far I'm studying implicit binding. It's also a way to make sure js doesn't get confused when referencing things if there are properties that are alike, etc.
+
+Implicit Binding Deep-dive
+-First of all, where you use the this is where you reference it, but it doesn't know what this is going to be yet, until you tell it. You're basically saying, whatever piece of data that's going to show up that contains said property name (the name after the this keyword like: this.name), apply to that property inside that piece of data.
+-Now the way that js knows that "this" is going to be, is when you invoke it, what ever is to the left of the dot. At that point, js simply replaces the "this" keyword, with the name of the data that got invoked
+
+
+////////////////////////////////////////////////////////
+MISC NOTES
+-Function inside an object literal: When you put a function inside an object literal, you either have to define it within the object literal, or otherwise if you want to reference an external function, you need to make sure you do not include the parenthesis, otherwise it's going to call it immediately, and you won't be able to refer to it at a later time. 
+
+
+
+
+
+
+
+
+
+.
