@@ -78,6 +78,30 @@ Final Example:
   let jazzy = people("Jazzy", "Vazquez");
 
   NOTE: So in this example above, we stored the function call inside jazzy, so now the object is inside of the variable called jazzy, which means that when we call jazzy.sayName() it's going to invoke the anonymous function which once again is going to fire the "this" keyword, which is being invoked by the variable jazzy, or in other words by the function, and this is going to be replaced with the attribute called name, which lives inside of our function called people.
+--------------------------------------------------------
+
+EXPLICIT BINDING DEEP-DIVE
+-Explicit binding seems to be a ton simpler than, implicit binding. Here the rules are simple.
+-First of all, it's best to use this kind of binding, when you have a standalone or global function that you want to execute.
+-You can use the "this" keyword inside the function.
+-Then, you can use one of the binding methods which are the following: call(), apply(), bind()
+  EXAMPLE:
+    function myFunc(name){
+      return `My name is ${name}. ${this.message}`
+    }
+
+    let me = {
+      message: "Nice to meet you"
+    }
+
+  call() : Literally calls the function, and the first parameter you include in it is the context, or in other words, that's where the "this" keyword is going to look for the chosen property. All the following string parameters account for the function's original parameters.
+    Example:
+      myFunc.call(me, "Jazzy")
+
+  apply() : Does the exact same thing as call, except that instead of using strings as parameters, following the initial parameter which gives it the context, make an array of the other parameters the function originally contains.
+    Example:
+      myFunc.apply(me, ["Jazzy"])
+
 
 ////////////////////////////////////////////////////////
 MISC NOTES
