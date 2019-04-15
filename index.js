@@ -1,22 +1,25 @@
-// let nameInput = document.getElementById('name');
-// let output = document.getElementById('output');
-let body = document.getElementById('body');
-//
-// let mixer = {
-//   name: "Vincent"
-// }
-//
-// function finalRes(obj){
-//   obj.result = function(){
-//     return `Welcome ${this.name}`
-//   }
-// }
-//
-// finalRes(mixer);
-// output.innerHTML = mixer.result()
-window.addEventListener('compositionstart', () => {
-  return body.style = "background: blue";
-})
+var body = document.getElementById('body');
+
+var nameInput = document.getElementById('name');
+nameInput.addEventListener('click', myEvent, false)
+
+function myEvent(){
+  return body.style = "background: blue"
+}
+
+
+var button = document.querySelector('button');
+
+
+
+button.addEventListener('click', myEventRemover)
+
+
+function myEventRemover(){
+  nameInput.removeEventListener('click', myEvent)
+
+}
+
 
 
 

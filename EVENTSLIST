@@ -1,0 +1,63 @@
+INTRO: Here's the list of events we've chosen to internalized. We'll practice each of them multiple times, until we can atleast remember all of them without having to look them up.
+
+RESOURCE EVENTS
+-Load : A resource and its dependent resources have finished loading.
+-Error : A resource failed to load.
+
+NETWORK
+-Online : The browser has gained access to the network.
+-Offline : The browser has lost access to the network.
+
+WEBSOCKET
+-open :	A WebSocket connection has been established.
+error	A WebSocket connection has been closed with prejudice (some data couldn't be sent for example).
+
+CSS TRANSITION
+-transitionend :	A CSS transition has completed.
+
+
+----------------------------------------------------------
+                    BACK-BURNER
+
+RESOURCE
+-Cached : 	The resources listed in the manifest have been downloaded, and the application is now cached.
+-abort	: The loading of a resource has been aborted.
+-beforeunload :	The window, the document and its resources are about to be unloaded.
+-unload :	The document or a dependent resource is being unloaded.
+
+FOCUS
+-Focus: An element has received focus (does not bubble).
+-Blur:	An element has lost focus (does not bubble).
+
+WEBSOCKET
+-message :	A message is received through a WebSocket.
+-close :	A WebSocket connection has been closed.
+
+SESSION HISTORY
+-pagehide :	A session history entry is being traversed from.
+-pageshow :	A session history entry is being traversed to.
+-popstate :	A session history entry is being navigated to (in certain cases).
+
+CSS ANIMATION
+-animationstart :	A CSS animation has started.
+-animationend :	A CSS animation has completed.
+-animationiteration :	A CSS animation is repeated.
+
+CSS TRANSITION
+-transitionstart :	A CSS transition has actually started (fired after any delay).
+-transitioncancel :	A CSS transition has been cancelled.
+-transitionend :	A CSS transition has completed.
+-transitionrun :	A CSS transition has begun running (fired before any delay starts).
+
+FORM
+-reset :	The reset button is pressed
+-submit :	The submit button is pressed
+
+PRINTING
+-beforeprint :	The print dialog is opened
+-afterprint :	The print dialog is closed
+
+
+
+
+.
