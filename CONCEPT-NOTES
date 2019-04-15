@@ -1,6 +1,7 @@
 CONCEPT NOTES
 
-TRANSITION:
+                              TRANSITION
+
 -You use transition on the element/s that's going to change in the future
 -From what I can tell, you can also specify which specific attributes you want it to transition on, so for for example, you can tell it to only transition on the width or height. I still don't know how it works if you don't specify anything at all.
   I just tested the above concept, and it's very powerful because you can basically have each attribute transition at different times.
@@ -29,8 +30,8 @@ Transition Timing Function: You remember this one right? This one determines the
 
 OVERVIEW: I learned the syntax, and overall how to use it, but it's still unpredictable to me, and I guess I still don't understand the concept of bezier curves, I definitely need to come back to bezier curves, but I decided to put it on the back burner, because my time can be used more efficiently elsewhere.
 
+///////////////////////////////////////////////////////////////
 
---------------------------------------------
 
                       ES5 BINDING THIS KEYWORD
 
@@ -137,10 +138,18 @@ WINDOW BINDING
 
     result() // Will equal "Hello World"
 
-    NOTE: Because we didn't give the function a context, it looked for myVar in the window object. 
+    NOTE: Because we didn't give the function a context, it looked for myVar in the window object.
 
 GENERAL OVERVIEW: Even though, I didn't notate the other 2 forms of binding, which are new keyword, and window binding, I did spend a long time practicing, and explaining how both of these work. I'd say, right now, I have gotten all binding concepts to LVL3. But just for future reference, I'll add examples for both new keyword binding, and window binding.
 -There are 4 different types of binding. Implicit, explicit, new keyword (Constructor), and window.
+
+////////////////////////////////////////////////////////
+
+                            EVENT LISTENERS
+
+-For some reason, only some events work. Take the transition for starters. If you use the transition end event, it works. But if you use the transition start event, it doesn't work.
+-I found out that some of these events don't work such as transitionstart, and transitionrun, because they're not supported by the browser I'm using which is chrome. 
+
 
 ////////////////////////////////////////////////////////
 MISC NOTES

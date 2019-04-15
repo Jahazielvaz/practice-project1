@@ -7,7 +7,6 @@ LVL2-Fetch with public apis
 LVL2-Ajax calls
 LVL1-forEach()
 LVL1-Array methods(shift(), pop(), map(), filter(), etc)
-LVL2.5-This keyword (Binding in es5)
 LVL1-Binding on es6
 LVL0-.join()
 LVL2-INVERSE-The difference between forEach() and map()
@@ -18,7 +17,12 @@ LVL2-transition property
 LVL2-flexbox
 LVL2-:first-child / :last-child CSS Targeting
 LVL2-.name-of-class > * CSS Targeting
-LVL3-.addEventListener (top events including transitionend)
+LVL2-.addEventListener (top events including transitionend)
+
+COMPLETED LVLS 3
+LVL3.5-This keyword (Binding in es5)
 
 BACK-BURNER
 LVL2-bezier curves, and cubic bezier
+LVL1-Event Bubbling
+LVL2-Manipulating CSS is JS (inline, classlist, etc)
