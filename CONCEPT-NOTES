@@ -113,6 +113,34 @@ EXPLICIT BINDING DEEP-DIVE
           newFunc() will return : "My name is Jazzy. Nice to meet you"
 
 OVERVIEW: Explicit binding came super easy for me. I get the syntax perfectly, and I also really understand the concept, as well as the differences between the 3 methods. Although, I still don't fully know when to apply it, so I would give myself a solid LVL3
+------------------------------------------------------------------
+NEW KEYWORD BINDING
+  EXAMPLE:
+    function Car(make, model, engine){
+      this.make = make,
+      this.model = model,
+      this.engine = engine
+    }
+
+    let myCar = new Car("Honda", "Accord", "V4")
+
+    NOTE: In this example above the this keyword is going to add those properties to the new function created by the "new" keyword, once it knows the context. The context is going to be the name of the new function. The "new" keyword, created a function which is stored in the variable called myCar, so in other words, myCar is the new function, and thanks to the "new" keyword, "this" knows that the context is myCar, and so it's going to dynamically create those properties, and give them the value that gets passed in through the parameters.
+------------------------------------------------------
+
+WINDOW BINDING
+  EXAMPLE:
+    var myVar = "Hello World";
+
+    function result(){
+      return this.myVar
+    }
+
+    result() // Will equal "Hello World"
+
+    NOTE: Because we didn't give the function a context, it looked for myVar in the window object. 
+
+GENERAL OVERVIEW: Even though, I didn't notate the other 2 forms of binding, which are new keyword, and window binding, I did spend a long time practicing, and explaining how both of these work. I'd say, right now, I have gotten all binding concepts to LVL3. But just for future reference, I'll add examples for both new keyword binding, and window binding.
+-There are 4 different types of binding. Implicit, explicit, new keyword (Constructor), and window.
 
 ////////////////////////////////////////////////////////
 MISC NOTES
