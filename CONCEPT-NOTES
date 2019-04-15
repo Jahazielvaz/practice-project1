@@ -78,6 +78,9 @@ Final Example:
   let jazzy = people("Jazzy", "Vazquez");
 
   NOTE: So in this example above, we stored the function call inside jazzy, so now the object is inside of the variable called jazzy, which means that when we call jazzy.sayName() it's going to invoke the anonymous function which once again is going to fire the "this" keyword, which is being invoked by the variable jazzy, or in other words by the function, and this is going to be replaced with the attribute called name, which lives inside of our function called people.
+
+  OVERVIEW: I feel like I'm really starting to get a good grasp of the concept. Furthermore, although I'm still shaky with the syntax, I'm getting pretty freaking good. Right now, I would say, I'm definitely a LVL3, but obviously it's still in the short term memory section of my brain.
+    I just spent 1 hour explaining it all to my version of my rubber ducky(Toothless)
 --------------------------------------------------------
 
 EXPLICIT BINDING DEEP-DIVE
@@ -102,6 +105,14 @@ EXPLICIT BINDING DEEP-DIVE
     Example:
       myFunc.apply(me, ["Jazzy"])
 
+  bind() : Does the exact same thing as .call() except, that instead of just calling the function, it actually creates a brand new function, which we can invoke/call at a later time
+    Example:
+      let newFunc = myFunc.bind(me, "Jazzy")
+
+        This will simply assign the values to a new function in this case called newFunc, which we can later invoke
+          newFunc() will return : "My name is Jazzy. Nice to meet you"
+
+OVERVIEW: Explicit binding came super easy for me. I get the syntax perfectly, and I also really understand the concept, as well as the differences between the 3 methods. Although, I still don't fully know when to apply it, so I would give myself a solid LVL3
 
 ////////////////////////////////////////////////////////
 MISC NOTES

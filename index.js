@@ -1,18 +1,19 @@
 let nameInput = document.getElementById('name');
 let output = document.getElementById('output');
 
-let filtering = {
-  name: nameInput
+let mixer = {
+  name: "Vincent"
 }
 
-function filterFunc(){
-  return output.innerHTML = `Welcome ${this.name}`;
+function finalRes(obj){
+  obj.result = function(){
+    return `Welcome ${this.name}`
+  }
 }
 
-let finalRes = filterFunc.bind(filtering);
+finalRes(mixer);
+output.innerHTML = mixer.result()
 
-function finalResult(){
-  console.log(finalRes())
-}
 
-nameInput.addEventListener('keyup', finalResult);
+
+// output.addEventListener('keyup', clicker);
