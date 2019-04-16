@@ -25,14 +25,15 @@ let images = ['./media-content/55-cancri-e.jpg', './media-content/blackhole.jpg'
 let switcher = document.getElementById('switcher');
 
 function switcherFunc(){
-  for(var i = 0; i < images.length; i++){
-    imageElement.setAttribute('src', images[i]);
-    imageContainer.appendChild(imageElement);
-    console.log(images[i])
-  }
-
-
+  var i = 0;
+  i++
+  imageElement.setAttribute('src', images[i]);
+  imageContainer.appendChild(imageElement);
+  // console.log(imageElement);
+  console.log(images[i]);
 }
+
+
 
 switcher.addEventListener('click', switcherFunc, false);
 
