@@ -5,6 +5,23 @@
   list-style: none;
 }
 
+
+#size-display{
+  border: 2px solid black;
+  padding: 10px;
+  max-width: 300px;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  position: fixed;
+  right: 0px;
+
+
+}
+
+/* End of Size Display */
+
+
 .blocks{
   display: inline-block;
   margin: 20px;
@@ -72,7 +89,25 @@ hr{
   height: 500px;
   border-radius: 10px;
   border: 2px solid black;
-  margin: auto;
+  margin: 30px auto 0;
+  background: url('./media-content/ship.jpg') center center no-repeat;
+  font-size: 30px;
+  line-height: 450px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  text-align: center;
+}
+
+.alt-container{
+  background: rgba(95, 14, 121);
+  font-size: 40px;
+  text-align: center;
+  line-height: 450px;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  font-weight: bolder;
+
 }
 
 #switcher{
@@ -85,4 +120,12 @@ hr{
   text-align: center;
   display: block;
   padding: 10px;
+}
+
+.text{
+  text-align: center;
+}
+
+p{
+  font-size: 30px;
 }

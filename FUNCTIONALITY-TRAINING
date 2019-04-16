@@ -31,3 +31,11 @@ LVL1-Image Uploader (I think multer might be good at this/ Yes I just confirmed.
 LVL1-Key identifiers React
 LVL1-Image carousel(Preferably using pop shift, etc)
 LVL1-Modal (Both default, and bootstrap)
+
+JS CLOCK
+-Converting 24 hours to 12 hours using if else statements
+- new Date()
+- variable /* which contains the new Date() as it's value */.getHours()
+- variable.getMinutes()
+- variable.getSeconds()
+- transform /* Study this in depth in css */
