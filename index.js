@@ -1,25 +1,24 @@
-var body = document.getElementById('body');
+let body = document.getElementById('body');
 
-var nameInput = document.getElementById('name');
-nameInput.addEventListener('click', myEvent, false)
+let nameInput = document.getElementById('name');
 
-function myEvent(){
-  return body.style = "background: blue"
+
+let myEvent = () => {
+  return alert("box was clicked")
 }
 
+nameInput.addEventListener('mouseenter', myEvent, false)
 
-var button = document.querySelector('button');
-
-
-
-button.addEventListener('click', myEventRemover)
+let button = document.querySelector('button');
 
 
-function myEventRemover(){
-  nameInput.removeEventListener('click', myEvent)
+
+let myEventRemover = () => {
+  return nameInput.removeEventListener('mouseenter', myEvent)
 
 }
 
+nameInput.addEventListener('mouseleave', myEventRemover, false)
 
 
 
