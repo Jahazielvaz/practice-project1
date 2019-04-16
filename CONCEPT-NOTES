@@ -148,8 +148,33 @@ GENERAL OVERVIEW: Even though, I didn't notate the other 2 forms of binding, whi
                             EVENT LISTENERS
 
 -For some reason, only some events work. Take the transition for starters. If you use the transition end event, it works. But if you use the transition start event, it doesn't work.
--I found out that some of these events don't work such as transitionstart, and transitionrun, because they're not supported by the browser I'm using which is chrome. 
+-I found out that some of these events don't work such as transitionstart, and transitionrun, because they're not supported by the browser I'm using which is chrome.
 
+REMOVING EVENT LISTENERS!!!!!!
+-Ok, so this concept has been the source of countless gray hairs, and a few too many red bulls, but I've finally cracked the code!!!! LISTEN CLOSELY
+-First of all, in order for you to be able to execute this function, you need to give it some context as to when you want this event listener to be removed. That means you can really only use removeEventListener inside another function that you need to invoke via another event listener. Here, check out this example.
+  EXAMPLE:
+    var div = document.querySelector('div');
+
+    function alertFunc(){
+      alert('Event is now active')
+    }
+
+    div.addEventListener('mouseenter', alertFunc, false)
+
+    NOTE: So let's say that div is a box. We've now added an event listener, which sets off alertFunc which opens an alert that says "Event is now active", when you hover over the div box. Pay close attention to the next step in order to remove it.
+
+    function alertRemove(){
+      div.removeEventListener('mouseenter', alertFunc)
+    }
+
+    div.addEventListener('mouseleave', alertRemove)
+
+    NOTE: Notice how we didn't use the removeEventListener directly on the div variable, but rather, we created a function, which contained the removeEventListener, which we then invoked via another event listener.
+
+-REALLY IMPORTANT!: This took me forever to figure out so pay attention. Removing the event listener, does not remove the effects of the event. It simply removes the actual listener which prevents that event from activating in the future. If you want to actually remove the effects of the original event listener, you have to specify that in your new event listener. So in the example above: When you hover over the div element, it'll create an alert. When you hover away from the div element, it won't remove the alert. You'll have to remove it manually, but the next time you hover over the div element, it will no longer create another alert.
+-OBSERVATION: The removeEventListener, as well as event listeners work with es6 syntax, however, when it comes to es6 functions, there is a difference. es5 functions for some reason, do not mind hoisting(Or in other words, you can define the function below the event listener that's calling it, and it'll still find it). es6 functions DO mind hoisting (Which means, you have to define the function before/above the event listener that's calling it. Otherwise, it's not going to find it.)
+-I still don't know how event bubbling works, but we'll get to it eventually.
 
 ////////////////////////////////////////////////////////
 MISC NOTES

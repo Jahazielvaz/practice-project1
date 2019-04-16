@@ -19,6 +19,7 @@ LVL2-:first-child / :last-child CSS Targeting
 LVL2-.name-of-class > * CSS Targeting
 LVL2-.addEventListener (top events including transitionend)
 
+
 COMPLETED LVLS 3
 LVL3.5-This keyword (Binding in es5)
 
@@ -26,3 +27,7 @@ BACK-BURNER
 LVL2-bezier curves, and cubic bezier
 LVL1-Event Bubbling
 LVL2-Manipulating CSS is JS (inline, classlist, etc)
+LVL1-Image Uploader (I think multer might be good at this/ Yes I just confirmed. Multer is perfect for this)
+LVL1-Key identifiers React
+LVL1-Image carousel
+LVL1-Modal (Both default, and bootstrap)

@@ -1,25 +1,52 @@
 INTRO: Here's the list of events we've chosen to internalized. We'll practice each of them multiple times, until we can atleast remember all of them without having to look them up.
 
-RESOURCE EVENTS
--Load : A resource and its dependent resources have finished loading.
--Error : A resource failed to load.
+CHECKLIST IN ORDER FOR ADDEVENTLISTENER TO BE CONSIDERED LVL3
+-Learn how to use event removers
+-Learn how to use js's other way of calling events (You don't have to internalize it perfectly, you just need to be aware that it exists and how to deal with it when you see it.)
+-Have the list of specific events you want to learn (We'll call this mastery list)
+-Know them each by heart and what they do (Practice them on the dom)
+-Have a list of potentials (It's going to be called Mastery Potentials, and include events here that you find pretty cool. Practice learning them everyday little by little.)
+-Use the event reference everyday, and put it on your main dock.
+--------------------------------------------------------
+
+
+                        MASTERY LIST
+
+CSS TRANSITION
+-transitionend :	A CSS transition has completed.
+
+VIEW
+-resize :	The document view has been resized.
+-scroll :	The document view or an element has been scrolled.
+
+CLIPBOARD
+-cut :	The selection has been cut and copied to the clipboard
+-copy :	The selection has been copied to the clipboard
+-paste :	The item from the clipboard has been pasted
+
+KEYBOARD
+-keydown :	ANY key is pressed
+-keypress :	ANY key except Shift, Fn, CapsLock is in pressed position. (Fired continously.)
+-keyup	ANY : key is released
+
+MOUSE
+-click :	A pointing device button (ANY button; soon to be primary button only) has been pressed and released on an element.
+-dblclick :	A pointing device button is clicked twice on an element.
+-mouseenter :	A pointing device is moved onto the element that has the listener attached.
+-mouseleave :	A pointing device is moved off the element that has the listener attached.
+
+----------------------------------------------------------
+
+                    MASTERY POTENTIALS
+
 
 NETWORK
 -Online : The browser has gained access to the network.
 -Offline : The browser has lost access to the network.
 
-WEBSOCKET
--open :	A WebSocket connection has been established.
-error	A WebSocket connection has been closed with prejudice (some data couldn't be sent for example).
-
-CSS TRANSITION
--transitionend :	A CSS transition has completed.
-
-
-----------------------------------------------------------
-                    BACK-BURNER
-
 RESOURCE
+-Load : A resource and its dependent resources have finished loading.
+-Error : A resource failed to load.
 -Cached : 	The resources listed in the manifest have been downloaded, and the application is now cached.
 -abort	: The loading of a resource has been aborted.
 -beforeunload :	The window, the document and its resources are about to be unloaded.
@@ -30,6 +57,8 @@ FOCUS
 -Blur:	An element has lost focus (does not bubble).
 
 WEBSOCKET
+-open :	A WebSocket connection has been established.
+-error :	A WebSocket connection has been closed with prejudice (some data couldn't be sent for example).
 -message :	A message is received through a WebSocket.
 -close :	A WebSocket connection has been closed.
 
@@ -57,6 +86,9 @@ PRINTING
 -beforeprint :	The print dialog is opened
 -afterprint :	The print dialog is closed
 
+VIEW
+-fullscreenchange :	An element was turned to fullscreen mode or back to normal mode.
+-fullscreenerror :	It was impossible to switch to fullscreen mode for technical reasons or because the permission was denied.
 
 
 
