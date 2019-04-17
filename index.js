@@ -80,7 +80,9 @@ let output = document.getElementById('keys-output');
 let keycodes = {d : 68, f : 70, g : 71, h : 72, j : 74, k : 75};
 let {d,f,g,h,j,k} = keycodes
 
-window.addEventListener('keydown', (e) => {
+let _listener;
+
+window.addEventListener('keydown', _listener = (e) => {
 
   let res = (letter) => {
     return output.innerHTML  = letter;
@@ -118,6 +120,13 @@ window.addEventListener('keydown', (e) => {
     break;
   }
 })
+
+let keyRemover = () => {
+  
+  output.innerHTML = '';
+}
+
+window.addEventListener('keyup', keyRemover, false);
 
 
 
