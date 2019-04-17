@@ -122,13 +122,31 @@ window.addEventListener('keydown', _listener = (e) => {
 })
 
 let keyRemover = () => {
-  
+
   output.innerHTML = '';
 }
 
 window.addEventListener('keyup', keyRemover, false);
 
 
+// Clipboard Event
+let clipText = document.getElementById("clip-text");
+
+let clipCopy = () => {
+  console.log('Text has been copied');
+}
+
+let clipCut = () => {
+  console.log('Text has been cut');
+}
+
+let clipPaste = () => {
+  console.log('Text has been pasted');
+}
+
+clipText.addEventListener('copy', clipCopy, false);
+clipText.addEventListener('cut', clipCut, false);
+clipText.addEventListener('paste', clipPaste, false);
 
 
 

@@ -17,11 +17,12 @@ LVL2-transition property
 LVL2-flexbox
 LVL2-:first-child / :last-child CSS Targeting
 LVL2-.name-of-class > * CSS Targeting
-LVL2-.addEventListener (top events including transitionend)
+
 
 
 COMPLETED LVLS 3
 LVL3.5-This keyword (Binding in es5)
+LVL3.5-.addEventListener (top events including transitionend)
 
 BACK-BURNER
 LVL2-bezier curves, and cubic bezier
