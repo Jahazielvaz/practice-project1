@@ -128,3 +128,35 @@ hr{
 p{
   font-size: 30px;
 }
+/* End of Image Swapper Section */
+
+/* Keyboard Event Section */
+#key-wrapper{
+  text-align: center;
+}
+
+#keys-output{
+  text-align: center;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: 45px;
+  margin: 20px 0;
+}
+
+#list-wrapper{
+  max-width: auto;
+  display: inline-block;
+}
+
+.keys{
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+  font-weight: bolder;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 10px;
+}

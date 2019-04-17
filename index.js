@@ -73,3 +73,60 @@ let transitionColorChange = () => {
 }
 
 window.addEventListener('transitionend', transitionColorChange, false);
+
+//Key press event
+let output = document.getElementById('keys-output');
+
+let keycodes = {d : 68, f : 70, g : 71, h : 72, j : 74, k : 75};
+let {d,f,g,h,j,k} = keycodes
+
+window.addEventListener('keydown', (e) => {
+
+  let res = (letter) => {
+    return output.innerHTML  = letter;
+  }
+
+  switch(e.keyCode){
+    case d:
+    res("D")
+    console.log(output)
+    break;
+
+    case f:
+    res("F")
+    console.log(output)
+    break;
+
+    case g:
+    res("G")
+    console.log(output)
+    break;
+
+    case h:
+    res("H")
+    console.log(output)
+    break;
+
+    case j:
+    res("J")
+    console.log(output)
+    break;
+
+    case k:
+    res("K")
+    console.log(output)
+    break;
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+//
