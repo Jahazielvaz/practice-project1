@@ -1,0 +1,66 @@
+INTRO: Every project is going to have an index from now on. This index is going to contain titles of the concepts the individual project deals with, as well as the syntax for each of them. The purpose of this, is to be able to have a section to quickly navigate through to find the concepts we might need at the time, and to be able to get the syntax quickly in order to be able to apply them more efficiently
+
+                            EVENTS
+
+ADDING EVENTS:
+  let eventFire = () => console.log('Page has been scrolled');
+
+  myTarget.addEventListener('scroll', eventFire, false)
+
+REMOVING EVENT LISTENERS: Note:(It'll remove the event listener, but not the effects already caused by the listener. You must remove those manually within the event remover function)
+  let eventRemove = () => {
+    myTarget.removeEventListener('scroll', eventFire)
+    }
+
+    myButton.addEventListener('click', eventRemove, false)
+
+EVENTS: Look at the EVENTSLIST file.
+-------------------------------------------------------
+                  HTML MANIPULATION IN JS
+
+SAMPLE:
+  let myTarget = document.getElementById('my-div');
+  let myImage = document.createElement('img');
+
+CREATING A NEW ELEMENT
+  let newElement = document.createElement('div');
+
+ADDING AN ELEMENT:
+  myTarget.appendChild(myImage) //Otherwise, if you don't have a defined variable, you can add a string element exe: "div"
+
+REMOVING AN ELEMENT:
+  myTarget.removeChild(myImage);
+
+ADDING TEXT TO AN EXISTING ELEMENT:
+  myTarget.innerText = "Hello World";
+
+ADDING TEXT AND MORE COMPLEX FEATURES TO HTML
+  myTarget.innerHTML =  `Window Width: ${window.innerWidth}px`
+
+
+-------------------------------------------------------
+                  CSS MANIPULATION IN JS
+SAMPLE:
+  let myTarget = document.getElementById('div-container');
+  let myImage = document.createElement('img');
+
+SETTING ONE STYLE
+  myTarget.style.background = "blue";
+
+SETTING MULTIPLE STYLES
+  myTarget.style.cssText = 'background: blue; color: purple;'
+
+SETTING AN ATTRIBUTE TO AN ELEMENT
+  myTarget.setAttribute('style', 'border: 2px solid black; color: purple;');
+  myImage.setAttribute('src', 'https://www.myurl.com/image2')
+
+-------------------------------------------------------
+                      SCREEN/WINDOW ATTRIBUTES
+                      
+GETTING USER SCREEN WIDTH or HEIGHT:
+  let myWidth = screen.width;
+  let myHeight = screen.height;
+
+GETTING CURRENT WINDOW WIDTH or HEIGHT:
+  let windowWidth = window.innerWidth;
+  let windowHeight = window.innerHeight;

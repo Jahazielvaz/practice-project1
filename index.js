@@ -7,7 +7,7 @@ let buttonOne = document.getElementById('button1');
 let sizeDisplay = document.getElementById('size-display');
 
 let resizer = () => {
-  let result = sizeDisplay.innerHTML = `Window Width: ${screen.width}px`;
+  let result = sizeDisplay.innerHTML = `Window Width: ${window.innerWidth}px`;
   console.log(result);
 };
 
@@ -57,4 +57,19 @@ switcher.addEventListener('click', switcherFunc, false);
 
 
 
-// output.addEventListener('keyup', clicker);
+// Scroll logging event
+let scrollLogger = () => {
+  console.log("Page has been scrolled");
+}
+
+window.addEventListener('scroll', scrollLogger, false);
+
+//Transition event
+// var blocks = document.querySelectorAll('section.blocks')
+
+let transitionColorChange = () => {
+  return body.style.cssText = "background: lightblue; font-size: 10px; border-radius: 20px;";
+  console.log('transition has ended')
+}
+
+window.addEventListener('transitionend', transitionColorChange, false);
