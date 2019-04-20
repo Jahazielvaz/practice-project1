@@ -9,6 +9,7 @@ OBSERVED DIFFERENCES
 
 map()
 -Creates a new array, whereas forEach() changes the original array.
+-IMPORTANT!!!: The mapping function will only work if the target of the mapping (Or in other words, the one that's invoking it) is an array. I had a bunch of elements stored inside a variable, and it wouldn't work, until
 
 forEach()
 -Doesn't actually return anything (undefined). It simply calls a provided function on each element in your array.
