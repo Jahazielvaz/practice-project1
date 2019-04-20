@@ -151,8 +151,7 @@ clipText.addEventListener('paste', clipPaste, false);
 // For Each
 let colorsArr = ['blue', 'orange', 'purple', 'brown', 'yellow', 'red', 'green', 'lightgreen']
 let feButton = document.getElementById('fe-button');
-let shapes = [document.getElementsByClassName('fe-shapes')];
-
+let shapes = document.querySelectorAll('.fe-shapes');
 
 let colorSwitcher = () => {
   let randomizer = Math.floor(Math.random() * colorsArr.length);
@@ -164,12 +163,6 @@ feButton.addEventListener('click', colorSwitcher, false);
 
 
 
-let remover = () => {
-  feButton.removeEventListener('click', colorSwitcher);
-  shapes.forEach(change => change.style.background = "")
-}
-
-shapes.map(res => res.addEventListener('dblclick', remover, false));
 
 
 
