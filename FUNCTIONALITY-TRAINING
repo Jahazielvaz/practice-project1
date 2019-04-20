@@ -13,7 +13,6 @@ LVL2-INVERSE-The difference between forEach() and map()
 LVL1-.replace()
 LVL1-.toggle()
 LVL2-transform property
-LVL2-transition property
 LVL2-flexbox
 LVL2-:first-child / :last-child CSS Targeting
 LVL2-.name-of-class > * CSS Targeting
@@ -21,6 +20,7 @@ LVL2-.name-of-class > * CSS Targeting
 
 
 COMPLETED LVLS 3
+LVL3-transition property
 LVL3.5-This keyword (Binding in es5)
 LVL3.5-.addEventListener (top events including transitionend)
 
