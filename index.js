@@ -148,6 +148,37 @@ clipText.addEventListener('copy', clipCopy, false);
 clipText.addEventListener('cut', clipCut, false);
 clipText.addEventListener('paste', clipPaste, false);
 
+// For Each
+let colorsArr = ['blue', 'orange', 'purple', 'brown', 'yellow', 'red', 'green', 'lightgreen']
+let feButton = document.getElementById('fe-button');
+let shapes = document.querySelectorAll('.fe-shapes');
+
+let colorSwitcher = () => {
+  let randomizer = Math.floor(Math.random() * colorsArr.length);
+  randomizer -= 1;
+  shapes.forEach(change => change.style.background = colorsArr[randomizer])
+}
+
+feButton.addEventListener('click', colorSwitcher, false);
+
+
+
+let remover = () => {
+  feButton.removeEventListener('click', colorSwitcher);
+  shapes.forEach(change => change.style.background = "")
+}
+
+shapes.map(console.log(shapes));
+
+
+
+
+
+
+
+
+
+
 
 
 

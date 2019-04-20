@@ -46,6 +46,27 @@
 
 }
 
+#for-each-container{
+  text-align: center;
+}
+
+#fe-button{
+  width: 250px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .3);
+  background: lightgreen;
+}
+
+.fe-shapes{
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .2);
+  display: inline-block;
+  margin: 10px;
+}
+
 
 
 
