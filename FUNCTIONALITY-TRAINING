@@ -5,11 +5,10 @@ LVL1-RegExp() Constructor
 LVL1-Regex methods, and patterns
 LVL2-Fetch with public apis
 LVL2-Ajax calls
-LVL1-forEach()
 LVL1-Array methods(shift(), pop(), map(), filter(), etc)
 LVL1-Binding on es6
 LVL0-.join()
-LVL2-INVERSE-The difference between forEach() and map()
+LVL2-The difference between forEach() and map()
 LVL1-.replace()
 LVL1-.toggle()
 LVL2-transform property
@@ -23,6 +22,7 @@ COMPLETED LVLS 3
 LVL3-transition property
 LVL3.5-This keyword (Binding in es5)
 LVL3.5-.addEventListener (top events including transitionend)
+LVL3-forEach()
 
 BACK-BURNER
 LVL2-bezier curves, and cubic bezier

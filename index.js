@@ -162,7 +162,11 @@ let colorSwitcher = () => {
 feButton.addEventListener('click', colorSwitcher, false);
 
 
+let equations = [23, 23,1,2, 334,344, 99, 347]
+let newEq = []
+equations.forEach(res => newEq.push(res * 2))
 
+console.log(newEq)
 
 
 
