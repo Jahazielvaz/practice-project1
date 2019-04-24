@@ -4,25 +4,19 @@ CONCEPTS/ Understanding Levels
 LVL1-RegExp() Constructor
 LVL1-Regex methods, and patterns
 LVL2-Fetch with public apis
-LVL2-Ajax calls
-LVL1-Array methods(shift(), pop(), map(), filter(), etc)
+LVL1-Array methods(shift(), pop(), map(), filter(), .join() .replace() .toggle() etc)
 LVL1-Binding on es6
-LVL0-.join()
-LVL2-The difference between forEach() and map()
-LVL1-.replace()
-LVL1-.toggle()
+LVL1-Prototypes
 LVL2-transform property
-LVL2-flexbox
-LVL2-:first-child / :last-child CSS Targeting
-LVL2-.name-of-class > * CSS Targeting
-
-
 
 COMPLETED LVLS 3
 LVL3-transition property
 LVL3.5-This keyword (Binding in es5)
 LVL3.5-.addEventListener (top events including transitionend)
 LVL3-forEach()
+LVL3-The difference between forEach() and map()
+LVL3-:first-child / :last-child CSS Targeting
+LVL3-.name-of-class > * CSS Targeting
 
 BACK-BURNER
 LVL2-bezier curves, and cubic bezier
@@ -32,6 +26,8 @@ LVL1-Image Uploader (I think multer might be good at this/ Yes I just confirmed.
 LVL1-Key identifiers React
 LVL2-Image carousel(Preferably using pop shift, etc)
 LVL1-Modal (Both default, and bootstrap)
+LVL2-flexbox
+LVL2-Ajax calls
 
 JS CLOCK
 -Converting 24 hours to 12 hours using if else statements

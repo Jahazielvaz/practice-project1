@@ -181,6 +181,9 @@ MISC NOTES
 -Function inside an object literal: When you put a function inside an object literal, you either have to define it within the object literal, or otherwise if you want to reference an external function, you need to make sure you do not include the parenthesis, otherwise it's going to call it immediately, and you won't be able to refer to it at a later time.
 
 
+////////////////////////////////////////////////////////
+UPDATES
+-Currently working on learning more about prototypes in order to learn about how binding works on es6
 
 
 

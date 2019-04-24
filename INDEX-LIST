@@ -1,0 +1,16 @@
+                            LIST
+JS FRONT-END
+-Event Listeners (Adding and removing)
+-Element Manipulation (Creating, adding, and removing elements)
+-Inner Element Manipulation (Adding text to an element, adding other complex features to an element)
+-CSS Manipulation (Setting one style, multiple styles, adding an attribute to a class)
+-Screen/Window Attributes (Getting current window or screen, width or height)
+
+CSS ADVANCED
+-Transitions
+-Transform attribute
+
+JS ADVANCED CONCEPTS
+-ES5 Binding (Explicit, implicit, new keyword, window)
+-map()
+-forEach()

@@ -56,7 +56,7 @@ SETTING AN ATTRIBUTE TO AN ELEMENT
 
 -------------------------------------------------------
                       SCREEN/WINDOW ATTRIBUTES
-                      
+
 GETTING USER SCREEN WIDTH or HEIGHT:
   let myWidth = screen.width;
   let myHeight = screen.height;
