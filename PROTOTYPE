@@ -1,0 +1,6 @@
+DISCOVERIES
+-Prototypes are a property that all functions come with. This property is another object.
+- _proto_ : Whenever an instance is created using the keyword "new", that instance object is given a property called _proto_ (Which you can access using dot notation, potentially even bracket notation).
+- _proto_ Value: The value of the _proto_ property, is the value of the prototype property of the function that created it.
+
+I need to continue working with prototypes 
