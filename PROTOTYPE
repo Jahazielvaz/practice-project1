@@ -1,6 +1,6 @@
 DISCOVERIES
 -Prototypes are a property that all functions come with. This property is another object.
-- _proto_ : Whenever an instance is created using the keyword "new", that instance object is given a property called _proto_ (Which you can access using dot notation, potentially even bracket notation).
-- _proto_ Value: The value of the _proto_ property, is the value of the prototype property of the function that created it.
-
-I need to continue working with prototypes 
+- __proto__ : Whenever an instance is created using the keyword "new", that instance object is given a property called __proto__ (Which you can access using dot notation, potentially even bracket notation).
+- __proto__ Value: The value of the __proto__ property, is the value of the prototype property of the function that created it.
+- NOTE: When you want to access the prototype of an object, make sure that you include two underscores before and after the word proto. Otherwise if you only use one underscore on each side, it'll return undefined.
+- If you try to access an object's prototype through dot notation as a regular property, it'll still return the property name and value, however if you try to access it through hasOwnProperty or otherwise try to identify if it is a property that belongs to the object, it'll be false. The reason for it, is because it's technically not a property of the object, however, when you try to access it through dot notation, if it doesn't find the property of the name you gave it, it'll then go and look inside it's prototype, and if it can't find it there either, it'll go up the prototype food chain.
