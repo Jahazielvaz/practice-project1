@@ -29,6 +29,7 @@ LVL1-Modal (Both default, and bootstrap)
 LVL2-flexbox
 LVL2-Ajax calls
 LVL1-hasOwnProperty() - EASY(Should be pretty easy and quick to learn ) : The purpose of this function is to figure out if an object has a specific property. It's a boolean. It'll return true if the property exists, otherwise it'll return false.
+LVL1-Inheritance vs composition 
 
 JS CLOCK
 -Converting 24 hours to 12 hours using if else statements
