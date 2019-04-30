@@ -5,8 +5,7 @@ LVL1-RegExp() Constructor
 LVL1-Regex methods, and patterns
 LVL2-Fetch with public apis
 LVL1-Array methods(shift(), pop(), map(), filter(), .join() .replace() .toggle() etc)
-LVL1-Binding on es6
-LVL1-Prototypes
+LVL1-Binding on es6/Reactjs
 LVL2-transform property
 
 COMPLETED LVLS 3
@@ -17,6 +16,7 @@ LVL3-forEach()
 LVL3-The difference between forEach() and map()
 LVL3-:first-child / :last-child CSS Targeting
 LVL3-.name-of-class > * CSS Targeting
+LVL3-Prototypes
 
 BACK-BURNER
 LVL2-bezier curves, and cubic bezier
@@ -29,7 +29,7 @@ LVL1-Modal (Both default, and bootstrap)
 LVL2-flexbox
 LVL2-Ajax calls
 LVL1-hasOwnProperty() - EASY(Should be pretty easy and quick to learn ) : The purpose of this function is to figure out if an object has a specific property. It's a boolean. It'll return true if the property exists, otherwise it'll return false.
-LVL1-Inheritance vs composition 
+LVL1-Inheritance vs composition
 
 JS CLOCK
 -Converting 24 hours to 12 hours using if else statements

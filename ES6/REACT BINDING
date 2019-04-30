@@ -1,0 +1,7 @@
+TUTORIAL: https://medium.freecodecamp.org/this-is-why-we-need-to-bind-event-handlers-in-class-components-in-react-f7ea1a6f93eb
+
+INTRO: The purpose of this tutorial is for us to understand exactly how binding works specifically with arrow functions since the binding is automatic. Furthermore, we need to figure out how all binding works in react.
+
+OBSERVATIONS
+-The tutorial says that the binding done in react, is not because of react, but rather because of es6, which means it should be pretty standard once we learn it better.
+-So the tutorial first gives an example only in es6 before it moves on to explain react, and mentions how the reason why you need to bind a callback function in the first place, is because when you try to assign the cb to a new variable, implicit binding turns into window binding, and loses its' context, but when I actually try to access the bound result using an es6 class, it still gives me the right context even after assigning the cb to a new variable. This is of course when we're talking about an instance of the constructor class. 
